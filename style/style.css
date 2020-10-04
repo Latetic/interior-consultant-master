@@ -258,10 +258,6 @@ nav ul li a{
         transform-origin: 0 0;  
     }
 
-    .menu-toggle.x{
-        position: fixed;
-    }
-
     .menu-toggle.x span:first-child{
         transform: rotate(45deg) translate(1px, 1px);
         /* background-color: white; */
