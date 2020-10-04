@@ -174,7 +174,7 @@ nav ul li a{
 
     .nav-links ul{
         display: flex;
-        position: absolute;
+        position: fixed;
         flex-direction: column;
         justify-content: center;
         text-align: center;
@@ -182,7 +182,7 @@ nav ul li a{
         right: 0;
         left: 0;
         bottom: 0;
-        height: 100vh;
+        height: 100%;
         z-index: 2;
         background-color: #181719;
         transition: all 0.5s ease;
@@ -256,6 +256,10 @@ nav ul li a{
     .menu-toggle span:first-child,
     .menu-toggle span:last-child{
         transform-origin: 0 0;  
+    }
+
+    .menu-toggle.x{
+        position: fixed;
     }
 
     .menu-toggle.x span:first-child{
