@@ -218,6 +218,7 @@ nav ul li a{
     /* Tablet Footer */
     .footer{
         position: relative;
+        font-size: 0.9rem;
     }
 
     .footer:before{
