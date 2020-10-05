@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interior Consultant</title>
   <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
-  
   <div class="container">
-    
     <nav>
       <div class="logo">
-        <a href="#">This Interior</a>
+        <a href="#" class="btn">This Interior</a>
       </div>
-    
       <div class="nav-links">
         <ul>
           <li><a href="#" class="active">Home</a></li>
@@ -29,52 +28,41 @@
         <span></span>
       </div>
     </nav>
-    
     <div class="content">
       <div class="content-1">
         <h1>Modern interior</h1>
-        <p>A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
+        <p>A full-Service residential & commercial interior design and staging company offering professional organizing
+          & eco-services.</p>
         <a href="#">Read More<i class="material-icons">arrow_right_alt</i></a>
-        
       </div>
       <div class="content-2">
         <img src="img/photo1.png" alt="">
-
         <div class="card">
-    
-            <div class="profile">
-              <img src="img/photo2.png" alt="">
-              <h4>Aliza Webber</h4>
-              <p>Interior designer</p>
-            </div>
-    
-            <h3>Designed in 2020 by Aliza Webber</h3>
-    
+          <div class="profile">
+            <img src="img/photo2.png" alt="">
+            <h4>Aliza Webber</h4>
+            <p>Interior designer</p>
+          </div>
+          <h3>Designed in 2020 by Aliza Webber</h3>
         </div>
-        
       </div>
     </div>
-
-    
   </div>
-
   <footer class="footer">
     <p>Ibka Anhar Fatcha @ DevChallenges.io</p>
   </footer>
-
-
   <script>
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('nav ul');
     let navListItem = document.querySelectorAll('nav li a');
-
-    menuToggle.addEventListener('click',function(){
-        menuToggle.classList.toggle('x');   
-        nav.classList.toggle('slide');
-        for(let i = 0; i < navListItem.length; i++){
-            navListItem[i].classList.toggle('shown');
-        }
+    menuToggle.addEventListener('click', function () {
+      menuToggle.classList.toggle('x');
+      nav.classList.toggle('slide');
+      for (let i = 0; i < navListItem.length; i++) {
+        navListItem[i].classList.toggle('shown');
+      }
     });
   </script>
 </body>
+
 </html>
