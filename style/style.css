@@ -1,24 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Lora&family=Montserrat:wght@200;300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
-*{
+* {
     box-sizing: border-box;
     color: #FFF;
 }
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
     background-color: #181719;
     font-size: 18px;
 }
 
-.container{
+.container {
     height: 100vh;
     background-color: #181719;
 }
 
 /* Navbar */
-nav{
+nav {
     display: flex;
     align-items: center;
     margin-top: 10px;
@@ -26,40 +26,45 @@ nav{
     padding: 0 40px;
 }
 
-.logo{
+.btn {
+    padding: 8px;
+    color: white;
     font-family: 'Crimson Pro', serif;
     font-size: 0.9rem;
-    border: 1px solid #FFF;
-    padding: 8px;
-    text-transform: uppercase;
-}
-
-.logo a {
+    background-color: none;
     text-decoration: none;
+    border: 1px solid #FFF;
+    text-transform: uppercase;
+    transition: .2s;
 }
 
-.nav-links{
+.logo a:hover {
+    background-color: white;
+    color: #181719;
+}
+
+.nav-links {
     width: 50%;
 }
 
-nav ul{
+nav ul {
     display: flex;
     list-style: none;
     justify-content: space-around;
 }
 
 
-nav ul li a{
+nav ul li a {
     flex-direction: column;
     text-decoration: none;
 }
 
-.active{
+.active {
     font-weight: bold;
 }
 
 /* Content */
-.content{
+.content {
     margin: 60px 0;
     padding: 40px;
     position: relative;
@@ -69,18 +74,18 @@ nav ul li a{
 }
 
 /* Content 1 */
-.content-1 h1{
+.content-1 h1 {
     font-family: 'Lora', serif;
     font-weight: 400;
 }
 
-.content-1 p{
+.content-1 p {
     width: 310px;
     font-weight: 200;
     font-size: 1.2rem;
 }
 
-.content-1 a{
+.content-1 a {
     display: flex;
     font-weight: 600;
     text-decoration: none;
@@ -88,16 +93,16 @@ nav ul li a{
 
 
 /* Content 2 */
-.content-2{
+.content-2 {
     position: relative;
 }
 
-.content-2 img{
+.content-2 img {
     width: 100%;
 }
 
 /* Card */
-.card{
+.card {
     position: absolute;
     right: 10px;
     bottom: -120px;
@@ -106,12 +111,12 @@ nav ul li a{
     background-color: #181719;
 }
 
-.profile{
+.profile {
     display: inline-block;
     width: 100%;
 }
 
-.profile img{
+.profile img {
     float: left;
     margin-top: 10px;
     margin-right: 20px;
@@ -119,13 +124,13 @@ nav ul li a{
     width: 60px;
 }
 
-.profile h4{
+.profile h4 {
     margin-top: 15px;
     font-size: 1.1rem;
     font-weight: 500;
 }
 
-.profile p{
+.profile p {
     margin-top: -20px;
     font-size: 0.8rem;
     color: #828282;
@@ -133,13 +138,13 @@ nav ul li a{
 }
 
 
-.card h3{
+.card h3 {
     font-family: 'Lora', serif;
     font-size: 1.6rem;
 }
 
 /* Footer */
-.footer{
+.footer {
     position: absolute;
     bottom: 0;
     width: 98%;
@@ -147,20 +152,20 @@ nav ul li a{
     font-size: 0.7rem;
 }
 
-.footer p{
+.footer p {
     color: #A9A9A9;
 }
 
 /* Hamburger Menu */
-.menu-toggle{
+.menu-toggle {
     display: none;
 }
 
 /* Responsive Breakpoints */
 
 /* Tablet */
-@media screen and (max-width: 768px){
-    .container{
+@media screen and (max-width: 768px) {
+    .container {
         position: relative;
         width: 100%;
         min-height: 1000px;
@@ -168,21 +173,23 @@ nav ul li a{
 
     /* Navbar */
 
-    nav{
-        padding: 0;
+    nav {
+        padding: 8px;
     }
 
-    .nav-links ul{
+    .nav-links ul {
         display: flex;
         position: fixed;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        top: -30px;
+        margin-top: 0;
+        top: 0;
         right: 0;
         left: 0;
-        bottom: 0;
-        height: 100%;
+        bottom: -30px;
+        width: 100%;
+        height: 100vh;
         z-index: 2;
         background-color: #181719;
         transition: all 0.5s ease;
@@ -190,39 +197,39 @@ nav ul li a{
         padding: 0;
     }
 
-    .nav-links ul li{
+    .nav-links ul li {
         margin-top: 40px;
     }
 
     /* .nav-links Animation */
-    .nav-links ul.slide{
+    .nav-links ul.slide {
         transform: translateY(0);
     }
 
-    .nav-links ul a{
+    .nav-links ul a {
         padding: 30px;
     }
 
     /* Tablet Content */
-    .content{
+    .content {
         padding: 0;
     }
 
-    .content-1{
+    .content-1 {
         margin-bottom: 30px;
     }
 
-    .card{
+    .card {
         box-shadow: 1px 1px 5px black;
     }
 
     /* Tablet Footer */
-    .footer{
+    .footer {
         position: relative;
         font-size: 0.9rem;
     }
 
-    .footer:before{
+    .footer:before {
         content: '';
         display: block;
         margin: 0 auto;
@@ -231,7 +238,7 @@ nav ul li a{
     }
 
     /* Hamburger */
-    .menu-toggle{
+    .menu-toggle {
         position: absolute;
         right: 20px;
         display: flex;
@@ -242,7 +249,7 @@ nav ul li a{
         z-index: 3;
     }
 
-    .menu-toggle span{
+    .menu-toggle span {
         transition: all 0.5s ease;
         display: block;
         width: 28px;
@@ -254,21 +261,26 @@ nav ul li a{
     /* Hamburger Animation */
 
     .menu-toggle span:first-child,
-    .menu-toggle span:last-child{
-        transform-origin: 0 0;  
+    .menu-toggle span:last-child {
+        transform-origin: 0 0;
     }
 
-    .menu-toggle.x span:first-child{
+    .menu-toggle.x {
+        position: fixed;
+        right: 28px;
+    }
+
+    .menu-toggle.x span:first-child {
         transform: rotate(45deg) translate(1px, 1px);
         /* background-color: white; */
     }
 
-    .menu-toggle.x span:last-child{
+    .menu-toggle.x span:last-child {
         transform: rotate(-45deg) translate(-2px, -1px);
         /* background-color: white; */
     }
 
-    .menu-toggle.x span:nth-child(2){
+    .menu-toggle.x span:nth-child(2) {
         opacity: 0;
         transform: scale(0);
     }
