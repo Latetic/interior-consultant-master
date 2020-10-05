@@ -13,7 +13,8 @@ body {
 }
 
 .container {
-    height: 100vh;
+    position: relative;
+    min-height: 790px;
     background-color: #181719;
 }
 
@@ -145,7 +146,7 @@ nav ul li a {
 
 /* Footer */
 .footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 98%;
     text-align: center;
